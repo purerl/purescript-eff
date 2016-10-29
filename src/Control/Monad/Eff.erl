@@ -1,4 +1,3 @@
-% module Control.Monad.Eff
 -module(control_monad_eff@foreign).
 -export([pureE/1,bindE/1,runPure/1,untilE/1,whileE/1,forE/1, foreachE/1]).
 
