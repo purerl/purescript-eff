@@ -25,22 +25,22 @@ mkEffFn10(Fun) -> fun (A,B,C,D,E,F,G,H,I,J) -> ((((((((((Fun(A))(B))(C))(D))(E))
 
 % runEffFnX - making heavy use of auto-currying
 
-runEffFn1(F,A) -> fun (_) -> F(A) end.
+runEffFn1(Fun,A) -> fun (_) -> Fun(A) end.
 
-runEffFn2(F,A,B) -> fun (_) -> F(A,B) end.
+runEffFn2(Fun,A,B) -> fun (_) -> Fun(A,B) end.
 
-runEffFn3(F,A,B,C) -> fun (_) -> F(A,B,C) end.
+runEffFn3(Fun,A,B,C) -> fun (_) -> Fun(A,B,C) end.
 
-runEffFn4(F,A,B,C,D) -> fun (_) -> F(A,B,C,D) end.
+runEffFn4(Fun,A,B,C,D) -> fun (_) -> Fun(A,B,C,D) end.
 
-runEffFn5(F,A,B,C,D,E) -> fun (_) -> F(A,B,C,D,E) end.
+runEffFn5(Fun,A,B,C,D,E) -> fun (_) -> Fun(A,B,C,D,E) end.
 
-runEffFn6(F,A,B,C,D,E,F) -> fun (_) -> F(A,B,C,D,E,F) end.
+runEffFn6(Fun,A,B,C,D,E,F) -> fun (_) -> Fun(A,B,C,D,E,F) end.
 
-runEffFn7(F,A,B,C,D,E,F,G) -> fun (_) -> F(A,B,C,D,E,F,G) end.
+runEffFn7(Fun,A,B,C,D,E,F,G) -> fun (_) -> Fun(A,B,C,D,E,F,G) end.
 
-runEffFn8(F,A,B,C,D,E,F,G,H) -> fun (_) -> F(A,B,C,D,E,F,G,H) end.
+runEffFn8(Fun,A,B,C,D,E,F,G,H) -> fun (_) -> Fun(A,B,C,D,E,F,G,H) end.
 
-runEffFn9(F,A,B,C,D,E,F,G,H,I) -> fun (_) -> F(A,B,C,D,E,F,G,H,I) end.
+runEffFn9(Fun,A,B,C,D,E,F,G,H,I) -> fun (_) -> Fun(A,B,C,D,E,F,G,H,I) end.
 
-runEffFn10(F,A,B,C,D,E,F,G,H,I,J) -> fun (_) -> F(A,B,C,D,E,F,G,H,I,J) end.
+runEffFn10(Fun,A,B,C,D,E,F,G,H,I,J) -> fun (_) -> Fun(A,B,C,D,E,F,G,H,I,J) end.
