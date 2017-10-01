@@ -3,25 +3,25 @@
 
 % mkEffFnX - feeling the paren love
 
-mkEffFn1(F) -> fun (A) -> (F(A))() end.
+mkEffFn1(Fun) -> fun (A) -> (Fun(A))() end.
 
-mkEffFn2(F) -> fun (A,B) -> ((F(A))(B))() end.
+mkEffFn2(Fun) -> fun (A,B) -> ((Fun(A))(B))() end.
 
-mkEffFn3(F) -> fun (A,B,C) -> (((F(A))(B))(C))() end.
+mkEffFn3(Fun) -> fun (A,B,C) -> (((Fun(A))(B))(C))() end.
 
-mkEffFn4(F) -> fun (A,B,C,D) -> ((((F(A))(B))(C))(D))() end.
+mkEffFn4(Fun) -> fun (A,B,C,D) -> ((((Fun(A))(B))(C))(D))() end.
 
-mkEffFn5(F) -> fun (A,B,C,D,E) -> (((((F(A))(B))(C))(D))(E))() end.
+mkEffFn5(Fun) -> fun (A,B,C,D,E) -> (((((Fun(A))(B))(C))(D))(E))() end.
 
-mkEffFn6(F) -> fun (A,B,C,D,E,F) -> ((((((F(A))(B))(C))(D))(E))(F))() end.
+mkEffFn6(Fun) -> fun (A,B,C,D,E,F) -> ((((((Fun(A))(B))(C))(D))(E))(F))() end.
 
-mkEffFn7(F) -> fun (A,B,C,D,E,F,G) -> (((((((F(A))(B))(C))(D))(E))(F))(G))() end.
+mkEffFn7(Fun) -> fun (A,B,C,D,E,F,G) -> (((((((Fun(A))(B))(C))(D))(E))(F))(G))() end.
 
-mkEffFn8(F) -> fun (A,B,C,D,E,F,G,H) -> ((((((((F(A))(B))(C))(D))(E))(F))(G))(H))() end.
+mkEffFn8(Fun) -> fun (A,B,C,D,E,F,G,H) -> ((((((((Fun(A))(B))(C))(D))(E))(F))(G))(H))() end.
 
-mkEffFn9(F) -> fun (A,B,C,D,E,F,G,H,I) -> (((((((((F(A))(B))(C))(D))(E))(F))(G))(H))(I))() end.
+mkEffFn9(Fun) -> fun (A,B,C,D,E,F,G,H,I) -> (((((((((Fun(A))(B))(C))(D))(E))(F))(G))(H))(I))() end.
 
-mkEffFn10(F) -> fun (A,B,C,D,E,F,G,H,I,J) -> ((((((((((F(A))(B))(C))(D))(E))(F))(G))(H))(I))(J))() end.
+mkEffFn10(Fun) -> fun (A,B,C,D,E,F,G,H,I,J) -> ((((((((((Fun(A))(B))(C))(D))(E))(F))(G))(H))(I))(J))() end.
 
 % runEffFnX - making heavy use of auto-currying
 
